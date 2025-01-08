@@ -1,0 +1,67 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- Song Title -->
+    <TextView
+        android:id="@+id/song_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Song Title"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <!-- Song Thumbnail -->
+    <!-- Center align for thumbnail -->
+
+    <!-- SeekBar -->
+
+    <ImageView
+        android:id="@+id/song_thumbnail"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/music" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="320dp" />
+
+    <!-- Media Controls -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/btn_previous"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/previous"
+            android:layout_marginEnd="16dp" />
+
+        <ImageView
+            android:id="@+id/btn_play_pause"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/play1"
+            android:layout_marginEnd="16dp" />
+
+        <ImageView
+            android:id="@+id/btn_next"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/next" />
+    </LinearLayout>
+</LinearLayout>
