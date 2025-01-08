@@ -1,5 +1,6 @@
 package com.rarepro.mediamanager
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -25,7 +26,9 @@ class MusicAdapter(
         // Click listener to play or stop the music
         holder.playStopImageView.setOnClickListener {
             onItemClick(position)
+            Log.d("Monit", "$position" )
         }
+
 
         // Dynamically update ImageView based on media player state
         if (position == currentPlayingPosition) {
